@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="p_green">#2e666a</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="black1">#171717</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="greypink">#FDE5E8</color>
+    <color name="grey">#D1CFCF</color>
+    <color name="grey1">#E9E8E8</color>
+    <color name="greylight">#F1F0F0</color>
+    <!--    <color name="greydarks">#8F8D8D</color>-->
+    <color name="greydarks">#666666</color>
+    <color name="greydarks_1">#636363</color>
+    <!--    <color name="greydark">#676666</color>-->
+    <color name="greydark">#514F4F</color>
+    <color name="grey_dark">#393737</color>
+    <!--    <color name="grey_dark">#A3A1A1</color>-->
+    <color name="colorPrimarylite">#566D70</color>
+    <color name="colorPrimarylite2">#598E89</color>
+    <color name="colorPrimarylite1">#55ACB3</color>
+    <color name="colorPrimary">#2e666a</color>
+    <color name="colorPrimaryDark">#1E4648</color>
+    <color name="colorPrimaryExtraDark">#A8031D</color>
+    <color name="colorAccent">#1E4648</color>
+    <color name="homebgcolor">#FDEDF0</color>
+    <color name="homebg">#F8F1F3</color>
+    <color name="color_activity_transparent">#00000000</color>
+    <color name="dot_dark_screen2">#d1395c</color>
+    <color name="dot_dark_screen1">#14a895</color>
+    <color name="dot_dark_screen4">#FF9800</color>
+    <color name="dot_dark_screen3">#a854d4</color>
+    <color name="dot_light_screen2">#f98da5</color>
+    <color name="dot_light_screen1">#8cf9eb</color>
+    <color name="dot_light_screen4">#93c6fd</color>
+    <color name="dot_light_screen3">#e4b5fc</color>
+    <color name="tabColor">#67ADF6</color>
+    <color name="tabbgColor">#F8DDB7</color>
+    <color name="red">#E91E1E</color>
+    <color name="red_light">#EC5D5D</color>
+    <color name="red_light1">#EC8080</color>
+    <color name="redDark">#7E1212</color>
+    <color name="blue">#03A9F4</color>
+    <color name="green">#4CAF50</color>
+    <color name="green1">#006C05</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="navbottom">#FF8B9C</color>
+    <color name="colorlist">#FA8898</color>
+    <color name="pophead">#EC9AA5</color>
+    <color name="sidemenu">#cc6423</color>
+    <color name="headertoolbar1">#e6451c</color>
+    <color name="headertoolbar2">#f27b5a</color>
+    <color name="headertoolbar3">#fdaf97</color>
+    <color name="btnColor">#3D3A3A</color>
+
+    <color name="line_color1">#e65100</color>
+    <color name="line_color2">#ab47bc</color>
+    <color name="line_color3">#1ca4fc</color>
+    <color name="line_color4">#4CAF50</color>
+    <color name="line_color5">#4CAF50</color>
+
+    <color name="leadstatus_color1">#EF93FF</color>
+    <color name="leadstatus_color2">#AAB3F3</color>
+    <color name="leadstatus_color3">#FDA525</color>
+    <color name="leadstatus_color4">#40868b</color>
+    <color name="leadstatus_color5">#987b73</color>
+
+
+    <color name="homecolor">#D3EDF1</color>
+    <color name="correctioncard">#B7CACC</color>
+    <color name="correctioncardheader">#6B9093</color>
+
+
+    <!--    Company Color-->
+    <color name="company_background">#C9C9C9</color>
+
+    <color name="dashlead">#5B7399</color>
+    <color name="dashservce">#E48743</color>
+    <color name="dashprojct">#3D8C8C</color>
+    <color name="dashcollctn">#74A170</color>
+    <color name="dashpickup">#6B6B6B</color>
+    <color name="dashinventry">#2A5E62</color>
+    <color name="dashacnt">#2D3E50</color>
+
+
+    <color name="textlead">#5B7399</color>
+    <color name="textsrvce">#E48743</color>
+    <color name="textprjct">#3D8C8C</color>
+    <color name="textcollctn">#74A170</color>
+    <color name="textpickup">#6B6B6B</color>
+    <color name="textinvntry">#2A5E62</color>
+    <color name="textacnt">#2D3E50</color>
+
+    // work
+
+    <!--    <color name="leadstages_color1">#F68484</color>-->
+    <!--    <color name="leadstages_color2">#50CFFD</color>-->
+    <!--    <color name="leadstages_color3">#FFEB3B</color>-->
+    <!--    <color name="leadstages_color4">#0BAADC</color>-->
+    <!--    <color name="leadstages_color5">#BC8F8F</color>-->
+    <!--    <color name="leadstages_color6">#FF9700</color>-->
+    <!--    <color name="leadstages_color7">#B22222</color>-->
+    <!--    <color name="leadstages_color8">#FF1493</color>-->
+    <!--    <color name="leadstages_color9">#2F4F4F</color>-->
+    <!--    <color name="leadstages_color10">#17a2b8</color>-->
+    <!--    <color name="leadstages_color11">#7bd235</color>-->
+
+    <!--    <color name="leadstages_color1">#f60</color>-->
+    <!--    <color name="leadstages_color2">#f90</color>-->
+    <!--    <color name="leadstages_color3">#fc0</color>-->
+    <!--    <color name="leadstages_color4">#9cf</color>-->
+    <!--    <color name="leadstages_color5">#BC8F8F</color>-->
+    <!--    <color name="leadstages_color6">#FF9700</color>-->
+    <!--    <color name="leadstages_color7">#B22222</color>-->
+    <!--    <color name="leadstages_color8">#FF1493</color>-->
+    <!--    <color name="leadstages_color9">#2F4F4F</color>-->
+    <!--    <color name="leadstages_color10">#17a2b8</color>-->
+    <!--    <color name="leadstages_color11">#7bd235</color>-->
+
+    <!--    <color name="leadstages_color1">#00a9ff</color>-->
+    <!--    <color name="leadstages_color2">#ffb840</color>-->
+    <!--    <color name="leadstages_color3">#ff5a46</color>-->
+    <!--    <color name="leadstages_color4">#00bb9e</color>-->
+    <!--    <color name="leadstages_color5">#785ffe</color>-->
+    <!--    <color name="leadstages_color6">#f28b8c</color>-->
+    <!--    <color name="leadstages_color7">#B22222</color>-->
+    <!--    <color name="leadstages_color8">#FF1493</color>-->
+    <!--    <color name="leadstages_color9">#2F4F4F</color>-->
+    <!--    <color name="leadstages_color10">#17a2b8</color>-->
+    <!--    <color name="leadstages_color11">#7bd235</color>-->
+
+
+    <color name="leadstages_color1">#6FB6DA</color>
+    <color name="leadstages_color2">#DAAE63</color>
+    <color name="leadstages_color3">#D67D72</color>
+    <color name="leadstages_color4">#56CFBC</color>
+    <color name="leadstages_color5">#A99BF3</color>
+    <color name="leadstages_color6">#CD9C9D</color>
+    <color name="leadstages_color7">#B22222</color>
+    <color name="leadstages_color8">#FF1493</color>
+    <color name="leadstages_color9">#2F4F4F</color>
+    <color name="leadstages_color10">#17a2b8</color>
+    <color name="leadstages_color11">#7bd235</color>
+    <color name="leadstages_color12">#333751</color>
+
+    <color name="cust_color1">#9575cd</color>
+    <color name="cust_color2">#7986cb</color>
+    <color name="cust_color3">#90caf9</color>
+    <color name="cust_color4">#26c6da</color>
+    <color name="cust_color5">#009688</color>
+
+    <!--    <color name="cust_1">#b2ebf2</color>-->
+    <!--    <color name="cust_2">#b3e5fc</color>-->
+    <!--    <color name="cust_3">#f5f5f5</color>-->
+
+    <color name="cust_1">#FBDEE1</color>
+    <color name="cust_2">#ffebee</color>
+    <color name="cust_3">#f5f5f5</color>
+    <color name="cust_4">#53C5CA</color>
+
+    <color name="leadbg1_color">#F8F8F8</color>
+
+    <color name="shape_color">#938fa6</color>
+    <color name="leadbg_color">#F0F0F0</color>
+    <color name="btn_color">#a78fa0</color>
+    <color name="home_top">#35787D</color>
+    <color name="color_background">#eeeeee</color>
+    <color name="color_background1">#f2f2f2</color>
+    <color name="color_background2">#f2f2f2</color>
+    <color name="color_reset">#dd0304</color>
+    <color name="color_submit">#840202</color>
+    <color name="color_reset1">#CFCFCF</color>
+    <color name="color_submit1">#840202</color>
+
+    <color name="color_pending">#DF0303</color>
+    <color name="color_upcoming">#2e8bc0</color>
+    <color name="color_complete">#024C02</color>
+
+    <color name="dropbg_color">#E1F0F0F0</color>
+
+
+    <!--    <color name="boxStrokeColor">#979797</color>-->
+    <color name="boxStrokeColor">#000000</color>
+    <!--    <color name="textColor">#979797</color>-->
+    <color name="textColor">#292929</color>
+    <color name="textColor1">#534E4E</color>
+    <!--    <color name="hintTextColor">#838282</color>-->
+    <color name="hintTextColor">#505050</color>
+
+    <color name="ColorCold">#1ca4fc</color>
+    <color name="ColorWarm">#f5a732</color>
+    <color name="ColorHot">#f96922</color>
+
+    <color name="report_head1">#001E6C</color>
+    <color name="report_head2">#035397</color>
+    <color name="report_head3">#21A194</color>
+    <color name="report_head4">#0b8d45</color>
+    <color name="report_head5">#d69929</color>
+    <color name="report_head6">#e65239</color>
+
+    <color name="report_list1">#99A2BD</color>
+    <color name="report_list2">#A4C3DF</color>
+    <color name="report_list3">#B3DCD8</color>
+    <color name="report_list4">#A6DDBF</color>
+    <color name="report_list5">#EDD7AF</color>
+    <color name="report_list6">#EFC5BE</color>
+    <color name="shade_1">#A4A4A4</color>
+
+
+    <color name="barchart_colors1">#6FB6DA</color>
+    <color name="barchart_colors2">#DAAE63</color>
+    <color name="barchart_colors3">#D67D72</color>
+    <color name="barchart_colors4">#56CFBC</color>
+    <color name="barchart_colors5">#A99BF3</color>
+    <color name="barchart_colors6">#CD9C9D</color>
+    <color name="barchart_colors7">#B22222</color>
+    <color name="barchart_colors8">#FF1493</color>
+    <color name="barchart_colors9">#2F4F4F</color>
+    <color name="barchart_colors10">#17a2b8</color>
+    <color name="barchart_colors11">#7bd235</color>
+    <color name="barchart_colors12">#333751</color>
+
+
+    <color name="barchart_colors13">#4E7F98</color>
+    <color name="barchart_colors14">#D38D16</color>
+    <color name="barchart_colors15">#AF4336</color>
+    <color name="barchart_colors16">#1F4E47</color>
+    <color name="barchart_colors17">#1D163E</color>
+    <color name="barchart_colors18">#CD9C9D</color>
+    <color name="barchart_colors19">#601717</color>
+    <color name="barchart_colors20">#DC66A5</color>
+    <color name="barchart_colors21">#80D5D5</color>
+    <color name="barchart_colors22">#1E3337</color>
+    <color name="barchart_colors23">#72AA45</color>
+    <color name="barchart_colors24">#737EC5</color>
+
+    <color name="barchart_colors25">#073349</color>
+    <color name="barchart_colors26">#61430E</color>
+    <color name="barchart_colors27">#4C1A14</color>
+    <color name="barchart_colors28">#0D554A</color>
+    <color name="barchart_colors29">#1B114E</color>
+    <color name="barchart_colors30">#430708</color>
+    <color name="barchart_colors31">#270707</color>
+    <color name="barchart_colors32">#876577</color>
+    <color name="barchart_colors33">#156868</color>
+    <color name="barchart_colors34">#737A16</color>
+    <color name="barchart_colors35">#5A256E</color>
+    <color name="barchart_colors36">#1D7004</color>
+
+
+    <color name="barchart_colors37">#447FF4</color>
+    <color name="barchart_colors38">#CE16453A</color>
+    <color name="barchart_colors39">#EFC90A</color>
+    <color name="barchart_colors40">#FA03EF</color>
+    <color name="barchart_colors41">#8B82B6</color>
+    <color name="barchart_colors42">#6EBBF4</color>
+    <color name="barchart_colors43">#1E1D1D</color>
+    <color name="barchart_colors44">#4E062C</color>
+    <color name="barchart_colors45">#385353</color>
+    <color name="barchart_colors46">#A107F8</color>
+    <color name="barchart_colors47">#183004</color>
+    <color name="barchart_colors48">#061265</color>
+    <color name="barchart_colors49">#BEBFBD</color>
+    <color name="barchart_colors50">#2E2F39</color>
+    <!--    <color name="tab_background_selected">#EF667B</color>-->
+    <!--    <color name="tab_background_unselected">#E8465F</color>-->
+    <!--    <color name="service_header">#E4E3E3</color>-->
+
+    <color name="tab_background_selected">#2E666A</color>
+    <color name="tab_background_unselected">#1E4648</color>
+    <color name="service_header">#E4E3E3</color>
+    <!--    <color name="service_header">#0f3460</color>-->
+
+    <color name="expense_color">#534FBE</color>
+    <color name="gain_color">#58ADF7</color>
+
+    <color name="expense_color1">#1A1C8A</color>
+    <color name="gain_color1">#C87B08</color>
+
+    <color name="expense_1">#6FB6DA</color>
+    <color name="gain_1">#DAAE63</color>
+
+    <color name="alternate_color">#FCF6F7</color>
+    <!--    <color name="alternate_color">#f4f4f6</color>-->
+
+
+
+    <!--    <color name="todolist_Color">#31a3ff</color>-->
+    <!--    <color name="overdue_Color">#e94560</color>-->
+    <!--    <color name="upcomung_Color">#00c572</color>   -->
+
+    <!--    <color name="todolist_Color">#a8d6fc</color>-->
+    <!--    <color name="overdue_Color">#ff9cad</color>-->
+    <!--    <color name="upcomung_Color">#aafeda</color>-->
+
+    <!--    <color name="todolist_Color">#84B6DF</color>-->
+    <!--    <color name="overdue_Color">#f76982</color>-->
+    <!--    <color name="upcomung_Color">#55E4A7</color>-->
+    <!--    <color name="right_Color">#E6E5E5</color>-->
+
+    <!--    <color name="todolist_Color">#48a9f8</color>-->
+    <!--    <color name="todolist_light_Color">#8FC8F7</color>-->
+    <!--    <color name="overdue_Color">#e94560</color>-->
+    <!--    <color name="overdue_light_Color">#F47D91</color>-->
+    <!--    <color name="upcomung_Color">#1bd084</color>-->
+    <!--    <color name="upcomung_light_Color">#74F4BF</color>-->
+    <!--    <color name="right_Color">#E6E5E5</color>-->
+
+    <!--    19.12.2022-->
+
+    <!--    <color name="todolist_round">#8293A8</color>-->
+    <!--    <color name="todolist_Color">#A9B6C6</color>-->
+    <!--    <color name="todolist_light_Color">#DCE4ED</color>-->
+
+    <!--    <color name="overdue_round">#BCAFB3</color>-->
+    <!--    <color name="overdue_Color">#C1B9BC</color>-->
+    <!--    <color name="overdue_light_Color">#EAE6E7</color>-->
+
+    <!--    <color name="upcomung_round">#96AE97</color>-->
+    <!--    <color name="upcomung_Color">#AFC3B1</color>-->
+    <!--    <color name="upcomung_light_Color">#E2E8E2</color>-->
+
+    <!--    <color name="upcomung_round">#9DB7B8</color>-->
+    <!--    <color name="upcomung_Color">#CEB8CDCD</color>-->
+    <!--    <color name="upcomung_light_Color">#E2E8E2</color>-->
+
+
+    <!--    19.12.2022 new-->
+
+    <color name="todolist_round">#2C6887</color>
+    <color name="todolist_Color">#5F94AE</color>
+    <color name="todolist_light_Color">#8BADBE</color>
+
+    <color name="overdue_round">#877E87</color>
+    <color name="overdue_Color">#A199A1</color>
+    <color name="overdue_light_Color">#CCC4CC</color>
+
+    <color name="upcomung_round">#667B7C</color>
+    <color name="upcomung_Color">#CE748E8E</color>
+    <color name="upcomung_light_Color">#CEC2D8D8</color>
+
+    <!--    <color name="mylead_round">#BC7B84</color>-->
+    <!--    <color name="mylead_Color">#B8868D</color>-->
+    <!--    <color name="mylead_light_Color">#FFB8868D</color>-->
+
+    <color name="mylead_round">#395A3A</color>
+    <color name="mylead_Color">#4C754E</color>
+    <color name="mylead_light_Color">#659567</color>
+
+    <color name="mylead_light_Color1">#79ADAF</color>
+    <color name="color_lite_common4">#548E91</color>
+
+
+
+
+    <color name="right_Color">#E6E5E5</color>
+    <color name="pop_gradient1">#972839</color>
+    <color name="pop_gradient2">#B33F51</color>
+    <color name="pop_gradient3">#ED5970</color>
+
+    <!--    <color name="list_si">#F695A3</color>-->
+    <!--    <color name="list_data">#F8B1BC</color>-->
+
+    <!--    <color name="list_si">#F8E7E8</color>-->
+    <!--    <color name="list_data">#F8EFF0</color>-->
+    <!--    <color name="list_line">#CECECE</color>-->
+
+    <color name="list_sii">#E2F5F6</color>
+    <color name="list_si">#CEE6E8</color>
+    <color name="list_data">#E5F2F3</color>
+    <color name="list_line">#CECECE</color>
+
+
+    <color name="service_adp1">#FA9483</color>
+    <color name="service_adp2">#FDFAF7</color>
+    <color name="service_adp3">#F37D69</color>
+
+    <color name="service1">#286db9</color>
+    <color name="service2">#553b8c</color>
+    <color name="service3">#f26514</color>
+
+    <color name="service11">#223070</color>
+    <color name="service21">#311C5C</color>
+    <color name="service31">#25072B</color>
+
+    <color name="color_line">#C5C5C5</color>
+    <color name="colorGradient1">#77E3F3F4</color>
+    <color name="colorGradient2">#779BBBBD</color>
+    <color name="colorGradient3">#2e666a</color>
+
+
+    <!--    <color name="leadstages_color1">#fcca00</color>-->
+    <!--    <color name="leadstages_color2">#fc8d01</color>-->
+    <!--    <color name="leadstages_color3">#f85200</color>-->
+    <!--    <color name="leadstages_color4">#C32C2C</color>-->
+    <!--    <color name="leadstages_color5">#fff100</color>-->
+
+
+    <!--    <color name="leadstages_color1">#c6806d</color>-->
+    <!--    <color name="leadstages_color2">#B8A064</color>-->
+    <!--    <color name="leadstages_color3">#7CB864</color>-->
+    <!--    <color name="leadstages_color4">#A6B864</color>-->
+    <!--    <color name="leadstages_color5">#B87664</color>-->
+
+
+    <!--    <color name="leadstages_color1">#fca404</color>-->
+    <!--    <color name="leadstages_color2">#4CB8D3</color>-->
+    <!--    <color name="leadstages_color3">#EA6E62</color>-->
+    <!--    <color name="leadstages_color4">#1cbb9f</color>-->
+    <!--    <color name="leadstages_color5">#6763b8</color>-->
+    <!--    <color name="leadstages_color6">#743175</color>-->
+
+    <!--    <color name="leadstages_color1">#4DD0E1</color>-->
+    <!--    <color name="leadstages_color2">#FFF176</color>-->
+    <!--    <color name="leadstages_color3">#FF8A65</color>-->
+    <!--    <color name="leadstages_color4">#FFF176</color>-->
+    <!--    <color name="leadstages_color5">#FF8A65</color>-->
+    <!--    <color name="leadstages_color6">#743175</color>-->
+
+    <!--    <color name="leadstages_color1">#01486c</color>-->
+    <!--    <color name="leadstages_color2">#279bb3</color>-->
+    <!--    <color name="leadstages_color3">#2eaa6b</color>-->
+    <!--    <color name="leadstages_color4">#ca7532</color>-->
+    <!--    <color name="leadstages_color5">#c44233</color>-->
+    <!--    <color name="leadstages_color6">#743175</color>-->
+
+
+
+    <color name="pending">#F87C2F</color>
+    <color name="upcoming">#34BCFA</color>
+    <color name="completed">#80F184</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="color_fab1">#9DB7B8</color>
+    <color name="color_fab2">#9DB7B8</color>
+    <color name="color_msg_tab">#54999E</color>
+    <color name="color_bg_tab">#CEF4F4F4</color>
+    <color name="color_tab">#9DB7B8</color>
+    <color name="color_tab1">#87A2A3</color>
+    <color name="color_account">#45888A</color>
+
+    <color name="colorService">#B2C0C2</color>
+    <color name="colorbgService">#E8E9EA</color>
+    <color name="colorbgService1">#F1F1F1</color>
+
+    <color name="color_confirm">#E8E7E7</color>
+    <color name="color_confirm_list">#F3F3F3</color>
+
+    <color name="color_cs_listnew">#687CB1</color>
+    <color name="service_head">#D3EEEDED</color>
+    <color name="list_bg">#708C8E</color>
+
+    <color name="list_label">#000000</color>
+    <color name="list_label1">#373636</color>
+    <color name="list_text">#FFFFFF</color>
+    <color name="list_icon">#FFFFFF</color>
+    <color name="list_edit">#FFFFFF</color>
+
+    <!--    Service-->
+
+    <color name="service_fill">#FFFFFF</color>
+
+    <color name="service_cs_main">#3A5461</color>
+    <color name="service_cs_strok">#D8DFE3</color>
+    <color name="service_sa_main">#44AFB5</color>
+    <color name="service_sa_strok">#D8E4E4</color>
+    <color name="service_sf_main">#FE592B</color>
+    <color name="service_sf_strok">#E2D6D4</color>
+
+    <color name="color_mandatory">#FA6464</color>
+
+    <color name="color_common1">#3A6F8E</color>
+    <color name="color_common2">#6C606C</color>
+    <color name="color_common3">#FF667B7C</color>
+    <color name="color_common4">#447B7E</color>
+
+    <color name="color_list1">#FF667B7C</color>
+    <color name="color_list2">#858DA5</color>
+    <color name="color_list3">#647685</color>
+    <color name="color_list4">#7E9293</color>
+    <color name="color_list5">#619C9F</color>
+
+    <color name="color_lite_common1">#4D82A1</color>
+
+
+    <!--    <color name="color_pickup">#4D7878</color>-->
+    <!--    <color name="color_delivery">#849675</color>-->
+
+
+    <!--    <color name="color_pickup">#4D7878</color>-->
+    <!--    <color name="color_delivery">#212443</color>-->
+
+    <!--    <color name="color_pickup">#4D7878</color>-->
+    <!--    <color name="color_delivery">#789479</color>-->
+
+    <color name="color_pickup">#739898</color>
+    <!--    <color name="color_delivery">#92A693</color>-->
+
+
+    <!--    <color name="color_pickup">#15576F</color>-->
+    <color name="color_delivery">#457F81</color>
+
+    <color name="lead_report">#3A5461</color>
+    <color name="service_report">#447B7E</color>
+    <color name="collection_report">#3A523C</color>
+    <color name="pickup_report">#836D43</color>
+
+    <!--    EMI-->
+
+    <!--    <color name="emi_todo_gardient1">#F4A741</color>-->
+    <!--    <color name="emi_todo_gardient2">#F3C78E</color>-->
+    <!--    <color name="emi_todo_gardient3">#A5793F</color>-->
+
+    <!--    <color name="emi_overdue_gardient1">#6CA5A4</color>-->
+    <!--    <color name="emi_overdue_gardient2">#62F8F6</color>-->
+    <!--    <color name="emi_overdue_gardient3">#286363</color>-->
+
+    <!--    <color name="emi_demand_gardient1">#4891FA</color>-->
+    <!--    <color name="emi_demand_gardient2">#9BC4FF</color>-->
+    <!--    <color name="emi_demand_gardient3">#395885</color>-->
+
+    <color name="emi_todo_gardient1">#667B7C</color>
+    <color name="emi_todo_gardient2">#92A9AA</color>
+    <color name="emi_todo_gardient3">#506465</color>
+
+    <color name="emi_overdue_gardient1">#7A727A</color>
+    <color name="emi_overdue_gardient2">#9A9A9A</color>
+    <color name="emi_overdue_gardient3">#514851</color>
+
+    <color name="emi_demand_gardient1">#44758C</color>
+    <color name="emi_demand_gardient2">#5F94AE</color>
+    <color name="emi_demand_gardient3">#284C5E</color>
+
+
+    <color name="color_mrp">#CA7F7F</color>
+    <color name="tab_active">#B3BEBF</color>
+    <color name="tab_inactive">#E8E7E7</color>
+    <color name="btn_more">#B3ADAD</color>
+
+    <color name="color_approve">#287378</color>
+    <color name="color_reject">#ED8661</color>
+    <!--    <color name="color_reject">#858484</color>-->
+
+    <!-- Authorization-->
+    <color name="web_bgcolor">#E8EDEE</color>
+    <color name="web_color">#CADADA</color>
+    <color name="web_color1">#CBD5D5</color>
+    <color name="web_color2">#E7EDED</color>
+    <color name="web_color3">#DCE1E1</color>
+
+    <color name="web_color4">#B6BAB8</color>
+
+    <color name="more_textcolor">#4A7763</color>
+
+    <color name="color_chat_my">#2e666a</color>
+    <color name="color_chat_op">#565B75</color>
+    <color name="bkdashtile">#565B75</color>
+
+    <color name="color_site_tab_10">#3B6561</color>
+    <color name="color_site_tab_11">#A0AEAC</color>
+
+    <color name="color_site_tab_20">#F09959</color>
+    <color name="color_site_tab_21">#B5AEA9</color>
+
+    <color name="color_site_tab_30">#D54A41</color>
+    <color name="color_site_tab_31">#DCD5D5</color>
+
+    <color name="color_site_tab_40">#6082B7</color>
+    <color name="color_site_tab_41">#D5D7DA</color>
+
+    <color name="ongoing">#FA6925</color>
+    <color name="converted">#F5A93D</color>
+    <color name="bluecolr">#1A6ED9</color>
+    <color name="warm"> #f5a732</color>
+    <color name="tileclick">#D5E3E4</color>
+
+    <color name="leadbar1">#FF03DAC5</color>
+    <color name="leadbar2">#A8031D</color>
+    <color name="leadbar3">#e4b5fc</color>
+    <color name="leadbar4">#ED5970</color>
+    <color name="leadbar5">#3B6561</color>
+
+
+    <!--    <color name="color_dash1">#c3e6cb</color>-->
+    <!--    <color name="color_dash2">#bee5eb</color>-->
+    <!--    <color name="color_dash3">#f5c6cb</color>-->
+
+    <!--    <color name="color_dash1">#3BA4A5</color>-->
+    <!--    <color name="color_dash2">#1D7EAD</color>-->
+    <!--    <color name="color_dash3">#B3C09E</color>-->
+
+    <color name="color_dash1">#CEEFE4</color>
+    <color name="color_dash2">#A4CFCB</color>
+    <color name="color_dash3">#D9D9F3</color>
+
+    <color name="color_head1">#1f6096</color>
+    <color name="color_head2">#163d5c</color>
+    <color name="color_head3">#21A194</color>
+    <color name="color_head4">#4C5554</color>
+
+    <color name="punch">#E6F1F2</color>
+
+    <color name="today_color">#d7af36</color>
+    <color name="pending_color">#fc9416</color>
+    <color name="upcoming_color">#10aee1</color>
+    <color name="completed_color">#58c427</color>
+
+    <color name="completed_color2">#70F675</color>
+
+</resources>
