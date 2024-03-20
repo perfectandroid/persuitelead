@@ -7,11 +7,9 @@ import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import com.google.gson.GsonBuilder
 import com.perfect.persuitelead.Api.ApiInterface
-import com.perfect.persuitelead.BuildConfig
 import com.perfect.persuitelead.Helper.Config
 import com.perfect.persuitelead.Helper.ProdsuitApplication
-import com.perfect.persuitelead.Model.LeadEditListModel
-import com.perfect.persuitelead.Model.VersionModel
+import com.perfect.persuitelead.Model.OTPModel
 import com.perfect.persuitelead.R
 
 import okhttp3.OkHttpClient
@@ -21,32 +19,29 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
-import java.util.ArrayList
+import java.util.*
 
-object VersionRepository {
+object OTPActivityRepository {
 
+    var TAG = "OTPActivityRepository"
     private var progressDialog: ProgressDialog? = null
-    val leadEditSetterGetter = MutableLiveData<VersionModel>()
-    val TAG: String = "LeadEditRepository"
+    val otpSetterGetter = MutableLiveData<OTPModel>()
 
-    fun getServicesApiCall(context: Context): MutableLiveData<VersionModel> {
-        getLeadEditList(context)
-        return leadEditSetterGetter
+    fun getServicesApiCall(context: Context,strMOTP : String): MutableLiveData<OTPModel> {
+        doOTPVerification(context, strMOTP)
+        return otpSetterGetter
     }
 
-    private fun getLeadEditList(context: Context) {
-
-        Log.e(TAG,"getLeadEditDetails  ")
+    private fun doOTPVerification(context: Context,strMOTP : String) {
         try {
-            leadEditSetterGetter.value = VersionModel("")
+            otpSetterGetter.value = OTPModel("")
             val BASE_URLSP = context.getSharedPreferences(Config.SHARED_PREF7, 0)
-            Log.e(TAG,"BASE_URL  123456  : "+BASE_URLSP.getString("BASE_URL", null))
+            Log.e(TAG,"BASE_URLSP   3999   :   "  +BASE_URLSP.getString("BASE_URL", null))
             progressDialog = ProgressDialog(context, R.style.Progress)
             progressDialog!!.setProgressStyle(android.R.style.Widget_ProgressBar)
             progressDialog!!.setCancelable(false)
             progressDialog!!.setIndeterminate(true)
-            progressDialog!!.setIndeterminateDrawable(context.resources.getDrawable(
-                R.drawable.progress))
+            progressDialog!!.setIndeterminateDrawable(context.resources.getDrawable(R.drawable.progress))
             progressDialog!!.show()
             val client = OkHttpClient.Builder()
                 .sslSocketFactory(Config.getSSLSocketFactory(context))
@@ -64,13 +59,20 @@ object VersionRepository {
             val apiService = retrofit.create(ApiInterface::class.java!!)
             val requestObject1 = JSONObject()
             try {
-                val versionCode = BuildConfig.VERSION_CODE
+                val TokenSP = context.getSharedPreferences(Config.SHARED_PREF5, 0)
+                val FK_EmployeeSP = context.getSharedPreferences(Config.SHARED_PREF1, 0)
                 val BankKeySP = context.getSharedPreferences(Config.SHARED_PREF9, 0)
+                val FK_ID_UserSP = context.getSharedPreferences(Config.SHARED_PREF44, 0)
+                val ID_TokenUserSP = context.getSharedPreferences(Config.SHARED_PREF85, 0)
                 requestObject1.put("BankKey", ProdsuitApplication.encryptStart(BankKeySP.getString("BANK_KEY", null)))
-                requestObject1.put("OsType", ProdsuitApplication.encryptStart("0"))
-                requestObject1.put("versionNo", ProdsuitApplication.encryptStart(""+versionCode))
-                Log.e(TAG,"requestObject1   85698   "+requestObject1)
+                requestObject1.put("Token", ProdsuitApplication.encryptStart(TokenSP.getString("Token", null)))
+                requestObject1.put("FK_Employee", ProdsuitApplication.encryptStart(FK_EmployeeSP.getString("FK_Employee", null)))
+                requestObject1.put("ReqMode", ProdsuitApplication.encryptStart("3"))
+                requestObject1.put("OTP", ProdsuitApplication.encryptStart(strMOTP))
+                requestObject1.put("ID_User", ProdsuitApplication.encryptStart(FK_ID_UserSP.getString("ID_User", null)))
+                requestObject1.put("ID_TokenUser", ProdsuitApplication.encryptStart(ID_TokenUserSP.getString("ID_TokenUser", null)))
 
+                Log.e(TAG,"requestObject1  69   "+requestObject1)
             } catch (e: Exception) {
                 e.printStackTrace()
             }
@@ -78,37 +80,38 @@ object VersionRepository {
                 okhttp3.MediaType.parse("application/json; charset=utf-8"),
                 requestObject1.toString()
             )
-            val call = apiService.versionCheck(body)
+            val call = apiService.getOtpverification(body)
             call.enqueue(object : retrofit2.Callback<String> {
                 override fun onResponse(
                     call: retrofit2.Call<String>, response:
                     Response<String>
                 ) {
                     try {
+                        Log.e(TAG,"requestObject1  69   "+response.body())
                         progressDialog!!.dismiss()
                         val jObject = JSONObject(response.body())
-                        val country = ArrayList<LeadEditListModel>()
-                        country.add(LeadEditListModel(response.body()))
-                        val msg = country[0].message
-                        leadEditSetterGetter.value = VersionModel(msg)
+                        val users = ArrayList<OTPModel>()
+                        users.add(OTPModel(response.body()))
+                        val msg = users[0].message
+                        otpSetterGetter.value = OTPModel(msg)
                     } catch (e: Exception) {
                         e.printStackTrace()
                         progressDialog!!.dismiss()
                         Toast.makeText(context,""+Config.SOME_TECHNICAL_ISSUES,Toast.LENGTH_SHORT).show()
-                        Log.e(TAG,"966661   "+e.toString())
                     }
                 }
                 override fun onFailure(call: retrofit2.Call<String>, t: Throwable) {
                     progressDialog!!.dismiss()
                     Toast.makeText(context,""+Config.SOME_TECHNICAL_ISSUES,Toast.LENGTH_SHORT).show()
-                    Log.e(TAG,"966662   "+t.message)
                 }
             })
-        }catch (e : Exception){
+         }
+        catch (e: Exception) {
             e.printStackTrace()
             progressDialog!!.dismiss()
             Toast.makeText(context,""+Config.SOME_TECHNICAL_ISSUES,Toast.LENGTH_SHORT).show()
-            Log.e(TAG,"966663   "+e.toString())
         }
     }
+
 }
+

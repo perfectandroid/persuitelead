@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.perfect.persuitelead.Model.VersionModel
-
+import com.perfect.persuitelead.Repository.VersionRepository
 
 
 class VersionCheckViewModel : ViewModel() {
@@ -13,7 +13,7 @@ class VersionCheckViewModel : ViewModel() {
     var versionData: MutableLiveData<VersionModel>? = null
 
     fun getVersion(context: Context) : LiveData<VersionModel>? {
-      //  versionData = VersionRepository.getServicesApiCall(context)
+        versionData = VersionRepository.getServicesApiCall(context)
         return versionData
     }
 }

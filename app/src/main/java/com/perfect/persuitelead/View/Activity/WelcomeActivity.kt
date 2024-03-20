@@ -28,8 +28,7 @@ class WelcomeActivity : AppCompatActivity(), View.OnClickListener {
         checkno = 0
 
 
-//            Config.RegisterNetworkCallback(context,this,checkno)
-//        Config.checkNetworkConnection(context,this)
+
 
         networkChangeReceiver = NetworkChangeReceiver()
         registerReceiver(networkChangeReceiver, IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION))
@@ -43,8 +42,8 @@ class WelcomeActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         when(v.id){
             R.id.btgetStarted->{
-//                intent = Intent(applicationContext, LoginActivity::class.java)
-//                startActivity(intent)
+                intent = Intent(applicationContext, LoginActivity::class.java)
+                startActivity(intent)
             }
         }
     }

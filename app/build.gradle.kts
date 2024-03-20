@@ -11,8 +11,8 @@ android {
         applicationId = "com.perfect.persuitelead"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 3
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -32,6 +32,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
 }
 
@@ -58,7 +62,8 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.0.2")
     implementation("com.squareup.retrofit2:converter-scalars:2.0.0")
 
-
+    implementation("androidx.biometric:biometric:1.1.0")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 
 
 }

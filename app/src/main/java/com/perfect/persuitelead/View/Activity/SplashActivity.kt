@@ -28,6 +28,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.textfield.TextInputEditText
+import com.perfect.persuitelead.BuildConfig
 import com.perfect.persuitelead.Helper.Common
 import com.perfect.persuitelead.Helper.Config
 import com.perfect.persuitelead.Helper.DBHelper
@@ -46,11 +47,11 @@ class SplashActivity : AppCompatActivity() ,Animation.AnimationListener{
 
 
 
-    // DEV LICENSE API 14-03-2024
+    // DEV LICENSE API 20-03-2024
     val CERT_NAME = "development.pem"
-    val BASE_URL  = "https://202.164.150.65:14271/PersuiteLicenseAPI/api/"
-    val IMAGE_URL = "https://202.164.150.65:14271/PersuiteLicenseAPI"
-    val BANK_KEY  = "-500"
+    val BASE_URL  = "https://202.164.150.65:14271/PersuiteLeadAPI/api/"
+    val IMAGE_URL = "https://202.164.150.65:14271/PersuiteLeadAPI"
+    val BANK_KEY  = "-700"
 
 
 
@@ -75,20 +76,17 @@ class SplashActivity : AppCompatActivity() ,Animation.AnimationListener{
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_splash)
-       // requestWindowFeature(Window.FEATURE_NO_TITLE)
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main))
-        { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-
+        setContentView(R.layout.activity_splash)
         context = this@SplashActivity
         db = DBHelper(this, null)
 
+//        distance = SphericalUtil.computeDistanceBetween(sydney, Brisbane);
+
+        //    val distance: Double = Common.distance("17.372102".toDouble(),"78.484196".toDouble(),"17.375775".toDouble(),"78.469218".toDouble())
+//        val distance: Double = Common.distance("11.258753".toDouble(),"75.780411".toDouble(),"11.3891".toDouble(),"75.7604".toDouble())
+        //   val distance: Double = Common.distance("11.24855325159412".toDouble(),"75.83330446439908".toDouble(),"11.39936546334902".toDouble(),"75.92666858367409".toDouble())
         val distance: Double = Common.distance("11.24855325159412".toDouble(),"75.83330446439908".toDouble()," 11.68284492077125".toDouble(),"75.97373498291024".toDouble())
 
         Log.e(TAG,"230    Distance   :  "+distance)
@@ -109,6 +107,15 @@ class SplashActivity : AppCompatActivity() ,Animation.AnimationListener{
         animBlink = AnimationUtils.loadAnimation(this, R.anim.blink);
         animBlink!!.setAnimationListener(this);
         im_app_logo.startAnimation(animBlink);
+
+
+//        checkno = 0
+//        if (checkno == 0){
+
+//            Config.RegisterNetworkCallback(context,this,checkno)
+//        Config.checkNetworkConnection(context,this)
+//            checkno++
+//        }
 
         val commonAppSP = applicationContext.getSharedPreferences(Config.SHARED_PREF18, 0)
         var chkstatus =commonAppSP.getString("commonApp","")
@@ -180,10 +187,7 @@ class SplashActivity : AppCompatActivity() ,Animation.AnimationListener{
 
         networkChangeReceiver = NetworkChangeReceiver()
         registerReceiver(networkChangeReceiver, IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION))
-
     }
-
-
 
     private fun versionCheck() {
         var editLeadGenDet = 0
@@ -300,8 +304,7 @@ class SplashActivity : AppCompatActivity() ,Animation.AnimationListener{
             }
 
             txtSubmit.setOnClickListener {
-              //  val applicationId = BuildConfig.APPLICATION_ID
-                val applicationId = 23213
+                val applicationId = BuildConfig.APPLICATION_ID
                 val playstorelink = "https://play.google.com/store/apps/details?id="+applicationId
                 Log.v("sfsdfsdfdsdd", "playStore " + playstorelink)
                 try {
@@ -834,6 +837,7 @@ class SplashActivity : AppCompatActivity() ,Animation.AnimationListener{
 
                                     if (!ID_PKey.equals("")){
                                         Log.e(TAG,"103331 ID_PKey  "+ID_PKey)
+                                        Log.e(TAG,"103331 if  ")
                                         db!!.insertUpdateReseller(ID_PKey!!,ResellerName,AppIconImageCode,TechnologyPartnerImage,ProductName,PlayStoreLink,AppStoreLink,
                                             ContactNumber,ContactEmail,ContactAddress,CertificateName,TestingURL,TestingMachineId,TestingImageURL,TestingMobileNo,
                                             TestingBankKey,TestingBankHeader,AboutUs,AudioClipEnabled,IsLocationDistanceShowing,EditMRPLead)
@@ -843,6 +847,7 @@ class SplashActivity : AppCompatActivity() ,Animation.AnimationListener{
                                         finish()
 
                                     }else{
+                                        Log.e(TAG,"103331 else do ")
                                         Log.e(TAG,"103332 ID_PKey  "+ID_PKey)
                                         ID_PKey = db!!.getDefaultCompanyID()
                                         Log.e(TAG,"103333 ID_PKey  "+ID_PKey)
@@ -1223,7 +1228,5 @@ class SplashActivity : AppCompatActivity() ,Animation.AnimationListener{
         registerReceiver(networkChangeReceiver, IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION))
 
     }
-
-
 
 }

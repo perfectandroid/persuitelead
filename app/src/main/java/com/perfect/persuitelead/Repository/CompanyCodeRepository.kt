@@ -32,7 +32,7 @@ object CompanyCodeRepository {
             val BASE_URLSP = context.getSharedPreferences(Config.SHARED_PREF7, 0)
             Log.e(TAG,"112322    "+BASE_URLSP.getString("BASE_URL", null))
             companyCodeSetterGetter.value = CompanyCodeModel("")
-
+            val BankKeySP = context.getSharedPreferences(Config.SHARED_PREF9, 0)
             val client = OkHttpClient.Builder()
                 .sslSocketFactory(Config.getSSLSocketFactory(context))
                 .hostnameVerifier(Config.getHostnameVerifier())
@@ -49,7 +49,7 @@ object CompanyCodeRepository {
             val apiService = retrofit.create(ApiInterface::class.java!!)
             val requestObject1 = JSONObject()
             try {
-
+                requestObject1.put("BankKey", ProdsuitApplication.encryptStart(BankKeySP.getString("BANK_KEY", null)))
                 requestObject1.put("ReqMode", ProdsuitApplication.encryptStart("122"))
                 requestObject1.put("ConfigCode", ProdsuitApplication.encryptStart(companyCode))
 
